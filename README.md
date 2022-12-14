@@ -12,3 +12,7 @@ table = iceberg.read().load("/path/to/iceberg/table")
 # Read the data from the table
 data = table.to_pandas()
 ```
+# official docs for python library
+```
+https://iceberg.apache.org/docs/0.13.1/python-api-intro/
+```
