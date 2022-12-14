@@ -25,6 +25,3 @@ print(tbl.location())
 from pprint import pprint
 pprint(int(tbl.current_snapshot().summary.get("total-records")))
 ```
-```
-![image](https://user-images.githubusercontent.com/60168704/207525015-cd292a04-b710-4aa4-b95a-a726d1231668.png)
-```
