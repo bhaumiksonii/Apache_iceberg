@@ -25,3 +25,21 @@ print(tbl.location())
 from pprint import pprint
 pprint(int(tbl.current_snapshot().summary.get("total-records")))
 ```
+# PySpark
+```
+```
+# AWS Athena
+```
+CREATE TABLE iceberg_table (
+  id int,
+  data string,
+  category string) 
+PARTITIONED BY (category, bucket(16,id)) 
+LOCATION 's3://DOC-EXAMPLE-BUCKET/iceberg-folder' 
+TBLPROPERTIES (
+  'table_type'='ICEBERG',
+  'format'='parquet',
+  'write_target_data_file_size_bytes'='536870912',
+  'optimize_rewrite_delete_file_threshold'='10'
+)
+```
