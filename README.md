@@ -4,6 +4,8 @@ Apache Iceberg is a data format and table management system that was designed to
 # How do IceBerg tables work?
 Iceberg uses a **snapshot based querying model**, where data files are mapped using _manifest and metadata files_. Even when data grows at scale, querying on these table gives high performance, as data is accessible at the file level. **These mappings are stored in an Iceberg catalog**.
 
+Athena supports Apache Iceberg tables that use the Apache Parquet format for data and the **AWS Glue catalog for their metastore**__.
+
 # Python Library
 ```
 from iceberg.hive import HiveTables
