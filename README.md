@@ -1,10 +1,9 @@
 # Apache IceBerg
 Apache Iceberg is a data format and table management system that was designed to address some of the limitations of the Apache Parquet and Apache ORC data formats. It was developed by the Apache Software Foundation as part of the Apache Iceberg project, which aims to improve data management on data lakes and other large-scale data storage systems.
 
-# Official docs for python library
-```
-https://iceberg.apache.org/docs/0.13.1/python-api-intro/
-```
+# How do IceBerg tables work?
+Iceberg uses a **snapshot based querying model**, where data files are mapped using _manifest and metadata files_. Even when data grows at scale, querying on these table gives high performance, as data is accessible at the file level. **These mappings are stored in an Iceberg catalog**.
+
 # Python Library
 ```
 from iceberg.hive import HiveTables
