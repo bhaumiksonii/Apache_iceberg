@@ -27,7 +27,7 @@ class IceBerg:
         return result.show()
     
     def update_data(self):
-        self.spark.sql("""UPDATE table_name
+        self.spark.sql("""UPDATE local.db.table
                         SET  data = 'bhaumik'
                         WHERE id = 1;""")
     
