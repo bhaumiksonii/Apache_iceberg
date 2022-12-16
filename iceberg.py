@@ -27,7 +27,9 @@ class IceBerg:
         return result.show()
     
     def update_data(self):
-        self.spark.sql("INSERT INTO local.db.table VALUES (1, 'a'), (2, 'b'), (3, 'c');")
+        self.spark.sql("""UPDATE table_name
+                        SET  data = 'bhaumik'
+                        WHERE id = 1;""")
     
     def inspect_snapshot(self):
         result = self.spark.sql("SELECT * FROM local.db.table.snapshots;")
@@ -35,8 +37,8 @@ class IceBerg:
 ice = IceBerg()
 
 
-print("**********Creating Table**********")
-ice.create_table()
+# print("**********Creating Table**********")
+# ice.create_table()
 
 
 print("**********Writing Table**********")
