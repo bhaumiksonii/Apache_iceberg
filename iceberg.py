@@ -48,6 +48,12 @@ ice.write_data()
 print("**********Reading Table**********")
 print(ice.read_data())
 
+print("**********Reading Table**********")
+print(ice.update_data())
+
+
+print("**********Reading Table**********")
+print(ice.read_data())
 
 print("**********Inspecting Table**********")
 print(ice.inspect_snapshot())
