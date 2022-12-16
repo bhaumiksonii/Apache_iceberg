@@ -51,8 +51,10 @@ print(ice.read_data())
 
 
 print("**********updating Table**********")
-print(ice.update_data())
-
+try :
+    print(ice.update_data())
+except Exception as e:
+    print(e)
 
 print("**********Reading Table**********")
 print(ice.read_data())
