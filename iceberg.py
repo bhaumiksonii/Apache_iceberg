@@ -1,6 +1,5 @@
 from pyspark.sql import SparkSession
-from pyspark.sql import SQLContext
-from pyspark import  SparkContext
+
 
 class IceBerg:
     def __init__(self):
