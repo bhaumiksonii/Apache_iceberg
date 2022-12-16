@@ -48,7 +48,9 @@ ice.write_data()
 print("**********Reading Table**********")
 print(ice.read_data())
 
-print("**********Reading Table**********")
+
+
+print("**********updating Table**********")
 print(ice.update_data())
 
 
