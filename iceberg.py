@@ -15,6 +15,7 @@ class IceBerg:
             .getOrCreate()
 
             
+            
     def create_table(self):
         self.spark.sql("CREATE TABLE local.db.table (id bigint, data string) USING iceberg")
 
