@@ -1,6 +1,5 @@
 from pyspark.sql import SparkSession
 
-
 class IceBerg:
     def __init__(self):
         self.spark = SparkSession.builder \
