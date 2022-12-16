@@ -1,0 +1,82 @@
+{
+  "format-version" : 1,
+  "table-uuid" : "d81f1df5-1da3-4bc1-b3bc-a62c7cd5239c",
+  "location" : "iceberg_pyspark/warehouse/db/table",
+  "last-updated-ms" : 1671185149277,
+  "last-column-id" : 2,
+  "schema" : {
+    "type" : "struct",
+    "schema-id" : 0,
+    "fields" : [ {
+      "id" : 1,
+      "name" : "id",
+      "required" : false,
+      "type" : "long"
+    }, {
+      "id" : 2,
+      "name" : "data",
+      "required" : false,
+      "type" : "string"
+    } ]
+  },
+  "current-schema-id" : 0,
+  "schemas" : [ {
+    "type" : "struct",
+    "schema-id" : 0,
+    "fields" : [ {
+      "id" : 1,
+      "name" : "id",
+      "required" : false,
+      "type" : "long"
+    }, {
+      "id" : 2,
+      "name" : "data",
+      "required" : false,
+      "type" : "string"
+    } ]
+  } ],
+  "partition-spec" : [ ],
+  "default-spec-id" : 0,
+  "partition-specs" : [ {
+    "spec-id" : 0,
+    "fields" : [ ]
+  } ],
+  "last-partition-id" : 999,
+  "default-sort-order-id" : 0,
+  "sort-orders" : [ {
+    "order-id" : 0,
+    "fields" : [ ]
+  } ],
+  "properties" : {
+    "owner" : "codespace"
+  },
+  "current-snapshot-id" : 872290713942013718,
+  "snapshots" : [ {
+    "snapshot-id" : 872290713942013718,
+    "timestamp-ms" : 1671185149277,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1671185138202",
+      "added-data-files" : "2",
+      "added-records" : "3",
+      "added-files-size" : "1287",
+      "changed-partition-count" : "1",
+      "total-records" : "3",
+      "total-files-size" : "1287",
+      "total-data-files" : "2",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "iceberg_pyspark/warehouse/db/table/metadata/snap-872290713942013718-1-9f8098cd-b646-48e5-85cb-e72733df9456.avro",
+    "schema-id" : 0
+  } ],
+  "snapshot-log" : [ {
+    "timestamp-ms" : 1671185149277,
+    "snapshot-id" : 872290713942013718
+  } ],
+  "metadata-log" : [ {
+    "timestamp-ms" : 1671185145205,
+    "metadata-file" : "iceberg_pyspark/warehouse/db/table/metadata/v1.metadata.json"
+  } ]
+}

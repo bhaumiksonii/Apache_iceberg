@@ -32,25 +32,21 @@ class IceBerg:
         return result.show()
 ice = IceBerg()
 
-try :
-    print("**********Creating Table**********")
-    ice.create_table()
-except Exception as e:
-    print(e)
-try :
-    print("**********Writing Table**********")
-    ice.write_data()
-except Exception as e:
-    print(e)
-try :
-    print("**********Reading Table**********")
-    print(ice.read_data())
-except Exception as e:
-    print(e)
-try :
-    print("**********Inspecting Table**********")
-    print(ice.inspect_snapshot())
-except Exception as e:
-    print(e)
+
+print("**********Creating Table**********")
+ice.create_table()
+
+
+print("**********Writing Table**********")
+ice.write_data()
+
+
+print("**********Reading Table**********")
+print(ice.read_data())
+
+
+print("**********Inspecting Table**********")
+print(ice.inspect_snapshot())
+
 
 
